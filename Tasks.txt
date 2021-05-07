@@ -1,0 +1,4 @@
+- Archives sites using WACS
+- De-duplicates CommonChains of sites using git
+- Git checkout only specific files to load an site
+- Serve sites from .git using nginx
