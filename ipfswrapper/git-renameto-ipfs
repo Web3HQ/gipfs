@@ -49,9 +49,7 @@ fi
 fi
 
 # traps for misspells
-if [[ "$1" = "ass" ]];then
-echo "Did you mean \"git add\"? If that's not what you mean, it may be the time to take a break of git..."
-fi
+if [[ "$1" = "ass" ]];then echo "Did you mean \"ipfs add\"? If that's not what you mean, it may be the time to take a break...";fi
 
 # displays help message with a list of commands:
 if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
