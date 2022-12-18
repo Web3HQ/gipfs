@@ -1,0 +1,3 @@
+gipfs will have an IPFS wrapper supporting:
+- convert CID
+- get a sound notification when ipfs add is done
