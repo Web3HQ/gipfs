@@ -1,0 +1,8 @@
+chown -h 1000:1000 './.gitmeta'
+chmod 0664 './.gitmeta'
+/usr/bin/touch -hcmd "2022-12-18 16:04:45.0912769400 -0300" './.gitmeta'
+/usr/bin/touch -hcad "2022-12-18 16:03:47.4312803400 -0300" './.gitmeta'
+chown -h 1000:1000 './git-renameto-ipfs'
+chmod 0777 './git-renameto-ipfs'
+/usr/bin/touch -hcmd "2022-12-18 16:02:08.7352861590 -0300" './git-renameto-ipfs'
+/usr/bin/touch -hcad "2022-12-18 16:04:18.9272784830 -0300" './git-renameto-ipfs'
