@@ -1,0 +1,32 @@
+This folder: /media/daniell/B/bkp/ST500LM012 HN-M500MBB Dat/0/ok/Pendrive/flshdrive/4. gipfs
+
+  File: ./folderstamp_nonrecursive.sh
+  Size: 584       	Blocks: 2          IO Block: 4096   regular file
+Device: 844h/2116d	Inode: 1101763     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-12-18 16:14:00.529345600 -0300
+Modify: 2022-12-17 18:01:45.523121000 -0300
+Change: 2022-12-18 16:13:54.367866800 -0300
+ Birth: -
+IPFS hash: QmWqmoFk1vfRwEQtPHUofPayefPAA7gH1qRaaWYYdqzZSu
+------------------------------
+  File: ./ipfswrapper
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 844h/2116d	Inode: 1100399     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2022-12-18 16:10:54.427053200 -0300
+Modify: 2022-12-18 16:09:43.389919900 -0300
+Change: 2022-12-18 16:10:53.301654000 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Tasks.txt
+  Size: 163       	Blocks: 1          IO Block: 4096   regular file
+Device: 844h/2116d	Inode: 1420777     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ daniell)   Gid: ( 1000/ daniell)
+Access: 2021-05-06 23:03:57.953948200 -0300
+Modify: 2021-05-06 23:03:24.374012800 -0300
+Change: 2021-05-06 23:03:24.705472900 -0300
+ Birth: -
+IPFS hash: QmQ5XvJcndoiQ6GUWARwjzbpuomSdDhHfkAtDhihayePqV
+------------------------------
