@@ -1,2 +1,6 @@
+- gipfs will come as suite and will tell its not ready yet. insp on 01's git wrapper
+- ipfs wrapper: make cid (ipfs add -q --only-hash packages.tar.gz >> packages.tar.gz.cid)
+https://dist.ipfs.tech/#ipfs-update
+
 - convert CID
 - get a sound notification when ipfs add is done
