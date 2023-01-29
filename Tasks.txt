@@ -1,11 +1,5 @@
-- gipfs will come as suite and will tell its not ready yet. insp on 01's git wrapper
-- ipfs wrapper: make cid (ipfs add -q --only-hash packages.tar.gz >> packages.tar.gz.cid) "ipfs cid make" cmd
-- ipfs wrapper: "ipfs cid validate" cmd
-https://dist.ipfs.tech/#ipfs-update
+- get a notification when ipfs add is done
 
-- ipfs wrapper: convert CID "ipfs cid convert" cmd
-- ipfs wrapper: help cmd, tell abt "ipfs cid" make, validate and convert cmds
-- get a sound notification when ipfs add is done
 
 - Git checkout only specific files to load a site
 - Serve sites from .git using nginx

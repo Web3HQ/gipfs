@@ -1,0 +1,36 @@
+#!/bin/sh
+nm="gipfs"
+vs="r1"
+itsversion="""
+        \e[1;42m $nm \e[0m\e[100m version $vs \e[0m
+        \e[100m Created by Daniella Mesquita \e[0m
+"""
+#should get from config file in common with gipfs
+
+if [ "$1" = "" ]; then
+   echo "$itsversion"
+   echo "Type 'gipfs --help' (without quotes) to see a list of available commands."
+fi
+
+# displays help message with a list of commands:
+if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+   echo "        \e[1;42m $nm $vs \e[0m"
+   echo "Use these commands after/together with 'gipfs' command."
+   echo "Available commands:"
+   echo "Information:"
+   echo "   --help, -h                  Shows all available commands"
+   echo "   --version, -v               Shows the version of $nm"
+#   echo "   size                        Shows size of git repository. '-q' for quiet simpler output"
+#   echo "   init, share                 Turns actual directory into a $nm git repository"
+#   echo "Manage repo:"
+#   echo "   ignore <file/folder>        Adds a file/folder to the .gitignore file, and git will not track it."
+#   echo "   blm                         Migrate from 'master' to 'main' branch in a repo ✊🏿"
+   echo "------------------------------"
+fi
+
+if [ "$1" = "--version" ] || [ "$1" = "-v" ]; then
+   echo "gipfs $vs"
+   #/usr/bin/gitish --version
+fi
+
+echo "GIPFS is not ready yet; still in development. Although you can already use our IPFS wrapper!"
