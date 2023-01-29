@@ -1,3 +1,4 @@
+- include/ipfs-update
 - get a notification when ipfs add is done
 
 
