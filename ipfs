@@ -8,10 +8,10 @@ itsversion="""
 #should get from config file in common with gipfs
 
 # Only run normal ipfs at commands unknown to gipfs's ipfs wrapper
-if [[ "$2" != "make" ]];then
-if [[ "$2" != "validate" ]];then
-if [[ "$2" != "convert" ]];then
-if [[ "$1" != "ass" ]];then
+if [ "$2" != "make" ];then
+if [ "$2" != "validate" ];then
+if [ "$2" != "convert" ];then
+if [ "$1" != "ass" ];then
 /usr/bin/./ipfsoriginal "$@"
 fi
 fi
@@ -19,9 +19,9 @@ fi
 fi
 
 # make a .cid file from another file!
-if [[ "$1" = "cid" ]];then
-if [[ "$2" = "make" ]];then
-if [[ "$3" != "" ]]
+if [ "$1" = "cid" ];then
+if [ "$2" = "make" ];then
+if [ "$3" != "" ]
 then
    ipfsoriginal add -q --only-hash "$3" >> "$3".cid
 else
@@ -31,9 +31,9 @@ fi
 fi
 
 # validate a cid format
-if [[ "$1" = "cid" ]];then
-if [[ "$2" = "validate" ]];then
-if [[ "$3" != "" ]]
+if [ "$1" = "cid" ];then
+if [ "$2" = "validate" ];then
+if [ "$3" != "" ]
 then
    if echo $3 | elcid d >/dev/null 2>&1; then echo "✅ Valid CID"; exit 0; else echo "❌ Invalid CID"; exit 1; fi
 # from https://discuss.ipfs.tech/t/is-there-a-way-to-determine-if-a-string-is-a-valid-ipfs-multihash/1248/7?u=daniellmesquita
@@ -44,9 +44,9 @@ fi
 fi
 
 # convert CID v1 to v2
-if [[ "$1" = "cid" ]];then
-if [[ "$2" = "convert" ]];then
-if [[ "$3" != "" ]]
+if [ "$1" = "cid" ];then
+if [ "$2" = "convert" ];then
+if [ "$3" != "" ]
 then
    echo "$3" | ipfsoriginal cid base32
 else
@@ -56,9 +56,9 @@ fi
 fi
 
 # get the CID of a folder
-if [[ "$1" = "cid" ]];then
-if [[ "$2" = "folder" ]];then
-if [[ "$3" != "" ]]
+if [ "$1" = "cid" ];then
+if [ "$2" = "folder" ];then
+if [ "$3" != "" ]
 then
    ipfsoriginal add -Qr --only-hash "$3"
    #from https://discuss.ipfs.tech/t/how-to-get-the-cid-of-a-folder/12614/2?u=daniellmesquita
@@ -69,7 +69,7 @@ fi
 fi
 
 # traps for misspells
-if [[ "$1" = "ass" ]];then echo "Did you mean \"ipfs add\"? If that's not what you mean, it may be the time to take a break...";fi
+if [ "$1" = "ass" ];then echo "Did you mean \"ipfs add\"? If that's not what you mean, it may be the time to take a break...";fi
 
 # displays help message with a list of commands:
 if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
