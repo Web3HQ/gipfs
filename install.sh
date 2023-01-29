@@ -12,6 +12,9 @@ case "${unameOutM}" in
     riscv64) flofarch="riscv64"
 esac
 
+echo "Initializing..."
+sh ./init.sh
+
 # Install IPFS:
 
       if [ "$flofarch" = "386" ]; then
