@@ -113,7 +113,7 @@ cat > /usr/share/mime/packages/x-cid.xml <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
   <mime-type type="text/x-cid">
-    <comment>IPFS hash/CID sum file</comment>
+    <comment>IPFS hash/CID checksum file</comment>
     <generic-icon name="text-x-cid"/>
     <glob pattern="*.cid"/>
   </mime-type>
