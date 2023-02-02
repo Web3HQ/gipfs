@@ -122,8 +122,12 @@ cat > /usr/share/mime/packages/x-cid.xml <<EOF
 EOF
 sudo update-mime-database /usr/share/mime
 
+echo "Installing icons:"
 echo "Installing icons for .cid files..."
 cp include/text-x-cid.svg /usr/share/icons/hicolor/scalable/mimetypes/
+sudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
+echo "Installing app icon for GIPFS..."
+cp icon.svg /usr/share/icons/hicolor/scalable/apps/
 sudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
 
 echo "Done! Run 'gipfs' command to use it." && exit
