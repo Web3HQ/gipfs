@@ -2,6 +2,9 @@
 - get a notification when ipfs add is done
 
 
+tell in README.md and --help that you can use ipfsoriginal as fallback
+
+
 - Git checkout only specific files to load a site
 - Serve sites from .git using nginx
 
