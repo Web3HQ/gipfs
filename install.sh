@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+#rocketlaunch_dir=`pwd` #from https://unix.stackexchange.com/a/52919/470623
 
 unameOutM="$(uname -m)"
 case "${unameOutM}" in
