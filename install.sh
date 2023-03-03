@@ -19,7 +19,7 @@ sh ./init.sh
 
       if [ "$flofarch" = "386" ]; then
          echo "Installing IPFS..."
-         tar -xzf include/IPFS/kubo_v0.18.0_linux-386.tar.gz
+         tar -xzf include/IPFS/kubo_v0.18.1_linux-386.tar.gz
          sudo mv kubo/ipfs /usr/bin
          sudo rm -r kubo
          chmod +x /usr/bin/ipfs
@@ -28,7 +28,7 @@ sh ./init.sh
 fi
       if [ "$flofarch" = "amd64" ]; then
          echo "Installing IPFS..."
-         tar -xzf include/IPFS/kubo_v0.18.0_linux-amd64.tar.gz
+         tar -xzf include/IPFS/kubo_v0.18.1_linux-amd64.tar.gz
          sudo mv kubo/ipfs /usr/bin
          sudo rm -r kubo
          chmod +x /usr/bin/ipfs

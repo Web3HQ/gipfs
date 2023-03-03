@@ -1,2 +1,3 @@
 *.tar.gz
 include/elcid
+wget-log
